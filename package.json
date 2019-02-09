@@ -4,7 +4,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "test": "npm run && mocha --compilers js:babel-core/register"
+    "test": "npm run && nyc mocha --compilers js:babel-core/register"
   },
   "dependencies": {
     "chai": "^4.2.0",
@@ -15,7 +15,8 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "nyc": "^13.2.0"
   },
   "description": "Para configurar lo necesario  npm --init   (crea el package.json con dependencias) desde: https://mochajs.org/#installation  npm install --global mocha  //global  npm install --save-dev mocha  //o como dependencia del proyecto  npm install mocha  mkdir test desde: http://jamesknelson.com/testing-in-es6-with-mocha-and-babel-6/ para usar babel como transpiler de JS6 a JS5 con mocha especialmente para que funcionen las clases import y export   npm install babel-core --save-dev   npm install --save-dev babel-core babel-preset-env",
   "main": "fizzbuzz.js",
