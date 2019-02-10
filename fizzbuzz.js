@@ -1,7 +1,7 @@
 function generateValue(number) {
   let value = "";
   if (number % 3 !== 0 && number % 5 !== 0)
-     value += number.toString();
+    value += number.toString();
   else {
     if (number % 3 === 0)
       value += "Fizz";
