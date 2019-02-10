@@ -1,23 +1,14 @@
 function fizzbuzz () {
-  let fizzbuzzString = ""
-  for(let counter = 1; counter <= 100; counter++) 
-  {
-    if (counter % 3 === 0 && counter % 5 === 0)
-      {
-        fizzbuzzString += "FizzBuzz";
-      }
-      else 
+  let fizzbuzzString = "";
+  for (let counter = 1; counter <= 100; counter++) {
+    if (counter % 3 !== 0 && counter % 5 !== 0)
+      fizzbuzzString += counter.toString();
+    else {
       if (counter % 3 === 0)
-        {
-          fizzbuzzString += "Fizz";
-        }
-        else 
-        if (counter % 5 === 0)
-          {
-            fizzbuzzString += "Buzz";
-          }
-          else
-          fizzbuzzString += counter.toString();
+        fizzbuzzString += "Fizz";
+      if (counter % 5 === 0)
+        fizzbuzzString += "Buzz";
+    }
   }
   return fizzbuzzString;
 }
