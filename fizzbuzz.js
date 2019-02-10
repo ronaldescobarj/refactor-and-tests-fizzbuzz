@@ -1,18 +1,22 @@
-function fizzbuzz (limit) {
+function generateValue(number) {
+  let value = "";
+  if (number % 3 !== 0 && number % 5 !== 0)
+     value += number.toString();
+  else {
+    if (number % 3 === 0)
+      value += "Fizz";
+    if (number % 5 === 0)
+      value += "Buzz";
+  }
+  return value;
+}
+
+function fizzbuzz(limit) {
   let fizzbuzzString = "";
   for (let counter = 1; counter <= limit; counter++) {
-    if (counter % 3 !== 0 && counter % 5 !== 0)
-      fizzbuzzString += counter.toString();
-    else {
-      if (counter % 3 === 0)
-        fizzbuzzString += "Fizz";
-      if (counter % 5 === 0)
-        fizzbuzzString += "Buzz";
-    }
+    fizzbuzzString += generateValue(counter);
   }
   return fizzbuzzString;
 }
 
-export { fizzbuzz }
-
-fizzbuzz()
+export { fizzbuzz, generateValue }
