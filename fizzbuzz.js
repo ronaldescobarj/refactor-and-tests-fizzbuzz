@@ -1,6 +1,6 @@
-function fizzbuzz () {
+function fizzbuzz (limit) {
   let fizzbuzzString = "";
-  for (let counter = 1; counter <= 100; counter++) {
+  for (let counter = 1; counter <= limit; counter++) {
     if (counter % 3 !== 0 && counter % 5 !== 0)
       fizzbuzzString += counter.toString();
     else {
