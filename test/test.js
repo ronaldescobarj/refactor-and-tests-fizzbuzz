@@ -8,7 +8,6 @@ const sequenceTo100 = "12Fizz4BuzzFizz78FizzBuzz11Fizz1314FizzBuzz1617Fizz19Buzz
 
 describe('Testear secuencia completa de fizzbuzz', function() {
     it('deberia devolver la secuencia completa', function() {
-        console.log(fizzbuzz());
         expect(fizzbuzz()).equal(sequenceTo100);
     })
 })

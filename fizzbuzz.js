@@ -1,25 +1,25 @@
 function fizzbuzz () {
-  let fb = ""
-  for(let i = 1; i <= 100; i++) 
+  let fizzbuzzString = ""
+  for(let counter = 1; counter <= 100; counter++) 
   {
-      if (i % 3 === 0 && i % 5 === 0)
+    if (counter % 3 === 0 && counter % 5 === 0)
       {
-        fb += "FizzBuzz";
+        fizzbuzzString += "FizzBuzz";
       }
       else 
-        if(i % 3 === 0)
+      if (counter % 3 === 0)
         {
-          fb += "Fizz";
+          fizzbuzzString += "Fizz";
         }
         else 
-          if(i % 5 === 0)
+        if (counter % 5 === 0)
           {
-            fb += "Buzz";
+            fizzbuzzString += "Buzz";
           }
           else
-            fb += i.toString();
+          fizzbuzzString += counter.toString();
   }
-  return fb;
+  return fizzbuzzString;
 }
 
 export { fizzbuzz }
